@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { whatsappLink, TESTE_GRATIS_MSG, planMsg } from "@/lib/data";
+import { whatsappLink, TESTE_GRATIS_MSG } from "@/lib/data";
+import PlansGrid from "@/components/PlansGrid";
 import {
   WhatsAppIcon,
   ArrowRightIcon,
@@ -29,25 +30,25 @@ import FaqAccordion from "@/components/FaqAccordion";
 import BlogPreview from "@/components/BlogPreview";
 
 export const metadata: Metadata = {
-  title: "Ceteo IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
+  title: "Questbr IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
   description:
-    "Ceteo IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp todos os dias. Peça seu teste grátis agora. Planos a partir de R$ 35/mês, sem fidelidade.",
+    "Questbr IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp todos os dias. Peça seu teste grátis agora. Planos a partir de R$ 25/mês, sem fidelidade.",
   alternates: { canonical: "/" },
   openGraph: {
     url: "/",
-    title: "Ceteo IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
+    title: "Questbr IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
     description:
-      "Ceteo IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp. Peça seu teste grátis agora. Planos a partir de R$ 35/mês, sem fidelidade.",
+      "Questbr IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp. Peça seu teste grátis agora. Planos a partir de R$ 25/mês, sem fidelidade.",
   },
   twitter: {
-    title: "Ceteo IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
-    description: "Ceteo IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp.",
+    title: "Questbr IPTV – Teste Grátis | IPTV Estável em HD, Full HD e 4K",
+    description: "Questbr IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp.",
   },
 };
 
 const homeFaqs = [
   {
-    pergunta: "Como funciona o teste IPTV grátis da Ceteo?",
+    pergunta: "Como funciona o teste IPTV grátis da Questbr?",
     resposta:
       "Você clica em qualquer botão do site e envia uma mensagem no WhatsApp. Informamos qual aparelho vai usar, nossa equipe indica o player certo e envia o acesso de teste sem custo. Não pedimos cartão de crédito nem cadastro extenso.",
   },
@@ -57,7 +58,7 @@ const homeFaqs = [
       "Para IPTV HD, cerca de 15 Mbps de velocidade real já entregam uma experiência confortável. Para Full HD, recomendamos 25 Mbps, e para 4K, pelo menos 45 Mbps. Nossa equipe ajusta a qualidade conforme a sua conexão.",
   },
   {
-    pergunta: "Em quais aparelhos a Ceteo IPTV funciona?",
+    pergunta: "Em quais aparelhos a Questbr IPTV funciona?",
     resposta:
       "Funciona em Smart TV (Samsung, LG, TCL), TV Box, Android TV, Fire TV Stick, Chromecast com Google TV, Roku, celulares Android e iPhone, notebook e PC. Ficou em dúvida? Mande o nome do aparelho no WhatsApp antes de contratar.",
   },
@@ -80,7 +81,7 @@ const homeFaqs = [
 const reviews = [
   {
     quote:
-      "Já tinha passado por dois serviços antes e sempre travava justamente no segundo tempo do jogo. A Ceteo é diferente — nem nos jogos de domingo à noite trava. Renovei pelo segundo semestre sem pensar duas vezes.",
+      "Já tinha passado por dois serviços antes e sempre travava justamente no segundo tempo do jogo. A Questbr é diferente — nem nos jogos de domingo à noite trava. Renovei pelo segundo semestre sem pensar duas vezes.",
     initials: "BT",
     name: "Bruno Tavares",
     location: "Campo Grande, MS · Assinante há 8 meses",
@@ -104,7 +105,7 @@ const reviews = [
   },
   {
     quote:
-      "Somos quatro em casa e cada um quer uma coisa. Meu marido nos esportes, eu nas séries e as crianças nos desenhos. A Ceteo tem tudo isso organizado direitinho. Sem briga pelo controle.",
+      "Somos quatro em casa e cada um quer uma coisa. Meu marido nos esportes, eu nas séries e as crianças nos desenhos. A Questbr tem tudo isso organizado direitinho. Sem briga pelo controle.",
     initials: "RS",
     name: "Renata Souza Lima",
     location: "Joinville, SC · Assinante há 7 meses",
@@ -128,7 +129,7 @@ const reviews = [
   },
   {
     quote:
-      "Assisto muito depois da meia-noite, depois que os pequenos dormem, e é justamente aí que outros serviços costumavam cair. Com a Ceteo nunca precisei ficar reiniciando o app no meio de um filme.",
+      "Assisto muito depois da meia-noite, depois que os pequenos dormem, e é justamente aí que outros serviços costumavam cair. Com a Questbr nunca precisei ficar reiniciando o app no meio de um filme.",
     initials: "GP",
     name: "Gustavo Pires",
     location: "Londrina, PR · Assinante há 8 meses",
@@ -164,7 +165,7 @@ export default function HomePage() {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Ceteo IPTV",
+    name: "Questbr IPTV",
     description: "Serviço de IPTV com transmissão estável em HD, Full HD e 4K, suporte humano no WhatsApp e planos sem fidelidade.",
     brand: { "@id": "https://questbr.com.br/#organization" },
     aggregateRating: {
@@ -174,10 +175,10 @@ export default function HomePage() {
       bestRating: "5",
     },
     offers: [
-      { "@type": "Offer", name: "Plano Mensal", price: "35.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
-      { "@type": "Offer", name: "Plano Trimestral", price: "90.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
-      { "@type": "Offer", name: "Plano Semestral", price: "170.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
-      { "@type": "Offer", name: "Plano Anual", price: "300.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "Plano Mensal", price: "25.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "Plano Trimestral", price: "65.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "Plano Semestral", price: "130.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "Plano Anual", price: "250.00", priceCurrency: "BRL", availability: "https://schema.org/InStock" },
     ],
   };
 
@@ -212,7 +213,7 @@ export default function HomePage() {
               </h1>
 
               <p className="hero-desc">
-                A Ceteo IPTV reúne canais ao vivo, filmes, séries, esportes e conteúdo infantil com transmissão firme nos horários de pico e suporte humano no WhatsApp todos os dias. Peça o teste, instale em minutos e só decida depois de ver funcionando na sua casa.
+                A Questbr IPTV reúne canais ao vivo, filmes, séries, esportes e conteúdo infantil com transmissão firme nos horários de pico e suporte humano no WhatsApp todos os dias. Peça o teste, instale em minutos e só decida depois de ver funcionando na sua casa.
               </p>
 
               <div className="hero-actions">
@@ -304,7 +305,7 @@ export default function HomePage() {
       </section>
 
       {/* ===== STATS STRIP ===== */}
-      <section className="stats-strip" aria-label="Números da Ceteo IPTV">
+      <section className="stats-strip" aria-label="Números da Questbr IPTV">
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item animate-on-scroll">
@@ -320,7 +321,7 @@ export default function HomePage() {
               <div className="stat-label">Suporte no WhatsApp todos os dias da semana</div>
             </div>
             <div className="stat-item animate-on-scroll">
-              <div className="stat-val">R$ 25</div>
+              <div className="stat-val">R$ 20,83</div>
               <div className="stat-label">Menor valor por mês no plano anual</div>
             </div>
           </div>
@@ -364,91 +365,13 @@ export default function HomePage() {
         <div className="container">
           <div className="label">Planos</div>
           <h2 className="section-heading" id="plans-heading" style={{ marginTop: "16px" }}>
-            Planos IPTV a partir de R$ 35 por mês
+            Planos IPTV a partir de R$ 25 por mês
           </h2>
           <p className="plans-note">
-            Todos os planos incluem o mesmo acesso completo. A diferença está apenas no tempo de contratação — e na economia que você faz escolhendo períodos maiores.
+            Quatro opções de assinatura, todas com o mesmo catálogo e suporte via WhatsApp.
           </p>
 
-          <div className="plans-grid">
-            <article className="plan-card">
-              <div className="plan-name">Mensal</div>
-              <div className="plan-desc">Ideal para conhecer o serviço sem compromisso longo</div>
-              <div className="plan-price">
-                <span className="plan-currency">R$</span>
-                <span className="plan-amount">35</span>
-                <span className="plan-period">/mês</span>
-              </div>
-              <div className="plan-equiv">sem fidelidade · pague e use</div>
-              <ul className="plan-features">
-                <li className="plan-feat">Acesso completo a canais, filmes e séries</li>
-                <li className="plan-feat">HD e Full HD incluídos</li>
-                <li className="plan-feat">Suporte no WhatsApp 7 dias</li>
-                <li className="plan-feat">Instalação acompanhada</li>
-                <li className="plan-feat">Sem fidelidade</li>
-                <li className="plan-feat">Ativação em minutos</li>
-              </ul>
-              <a href={whatsappLink(planMsg("Mensal"))} className="btn plan-cta plan-cta-default" target="_blank" rel="noopener">Contratar Mensal</a>
-            </article>
-
-            <article className="plan-card">
-              <div className="plan-name">Trimestral</div>
-              <div className="plan-desc">Três meses com economia de R$ 15 no período</div>
-              <div className="plan-price">
-                <span className="plan-currency">R$</span>
-                <span className="plan-amount">90</span>
-              </div>
-              <div className="plan-equiv">Equivale a R$ 30 por mês · sem fidelidade</div>
-              <ul className="plan-features">
-                <li className="plan-feat">Acesso completo a canais, filmes e séries</li>
-                <li className="plan-feat">HD, Full HD e 4K quando disponível</li>
-                <li className="plan-feat">Suporte no WhatsApp 7 dias</li>
-                <li className="plan-feat">Instalação acompanhada</li>
-                <li className="plan-feat">Troca de dispositivo sem custo</li>
-                <li className="plan-feat">Sem fidelidade</li>
-              </ul>
-              <a href={whatsappLink(planMsg("Trimestral"))} className="btn plan-cta plan-cta-default" target="_blank" rel="noopener">Contratar Trimestral</a>
-            </article>
-
-            <article className="plan-card plan-featured">
-              <div className="plan-badge">Mais escolhido</div>
-              <div className="plan-name">Semestral</div>
-              <div className="plan-desc">Seis meses de estabilidade com o melhor custo-benefício</div>
-              <div className="plan-price">
-                <span className="plan-currency">R$</span>
-                <span className="plan-amount">170</span>
-              </div>
-              <div className="plan-equiv">Equivale a cerca de R$ 28 por mês · sem fidelidade</div>
-              <ul className="plan-features">
-                <li className="plan-feat">Seis meses de acesso completo, sem reajuste</li>
-                <li className="plan-feat">HD, Full HD e 4K quando disponível</li>
-                <li className="plan-feat">Suporte prioritário e instalação acompanhada</li>
-                <li className="plan-feat">Ajuste fino de qualidade para sua internet</li>
-                <li className="plan-feat">Catálogo atualizado com lançamentos</li>
-                <li className="plan-feat">Troca de dispositivo sem custo adicional</li>
-              </ul>
-              <a href={whatsappLink(planMsg("Semestral"))} className="btn plan-cta plan-cta-feat" target="_blank" rel="noopener">Contratar Semestral</a>
-            </article>
-
-            <article className="plan-card">
-              <div className="plan-name">Anual</div>
-              <div className="plan-desc">Doze meses pelo menor valor mensal do site</div>
-              <div className="plan-price">
-                <span className="plan-currency">R$</span>
-                <span className="plan-amount">300</span>
-              </div>
-              <div className="plan-equiv">Equivale a R$ 25 por mês · sem fidelidade</div>
-              <ul className="plan-features">
-                <li className="plan-feat">Um ano de acesso completo garantido</li>
-                <li className="plan-feat">HD, Full HD e 4K quando disponível</li>
-                <li className="plan-feat">Suporte prioritário 7 dias por semana</li>
-                <li className="plan-feat">Troca de dispositivo sem custo</li>
-                <li className="plan-feat">Menor custo mensal do catálogo</li>
-                <li className="plan-feat">Sem fidelidade obrigatória ao renovar</li>
-              </ul>
-              <a href={whatsappLink(planMsg("Anual"))} className="btn plan-cta plan-cta-default" target="_blank" rel="noopener">Contratar Anual</a>
-            </article>
-          </div>
+          <PlansGrid />
 
           <div className="plans-footer">
             <span className="plans-footer-item"><CheckIcon width={14} height={14} />Pix, cartão ou boleto</span>
@@ -464,7 +387,7 @@ export default function HomePage() {
         <div className="container">
           <div className="label">Benefícios</div>
           <h2 className="section-heading" id="benefits-heading" style={{ marginTop: "16px" }}>
-            Por que escolher a Ceteo IPTV
+            Por que escolher a Questbr IPTV
           </h2>
           <p className="section-subtext">
             Reunimos em um único serviço os pontos que mais pesam na experiência de quem assiste todos os dias: estabilidade, qualidade de imagem, suporte real e preço justo.
@@ -588,12 +511,12 @@ export default function HomePage() {
             <div>
               <div className="label">Diferenciais</div>
               <h2 className="section-heading" id="diff-heading" style={{ marginTop: "16px" }}>
-                Por que a Ceteo é diferente de qualquer outro IPTV
+                Por que a Questbr é diferente de qualquer outro IPTV
               </h2>
             </div>
             <div>
               <p className="section-subtext" style={{ marginTop: 0 }}>
-                Qualquer serviço promete estabilidade. A diferença aparece na rotina: no jogo de domingo às 22h, na madrugada de sábado, quando o sistema trava e você precisa de alguém. É aí que a Ceteo se separa do resto.
+                Qualquer serviço promete estabilidade. A diferença aparece na rotina: no jogo de domingo às 22h, na madrugada de sábado, quando o sistema trava e você precisa de alguém. É aí que a Questbr se separa do resto.
               </p>
             </div>
           </div>
@@ -795,7 +718,7 @@ export default function HomePage() {
         <div className="container">
           <div className="label">Avaliações</div>
           <h2 className="section-heading" id="reviews-heading" style={{ marginTop: "16px" }}>
-            O que dizem os assinantes da Ceteo IPTV
+            O que dizem os assinantes da Questbr IPTV
           </h2>
 
           <div className="reviews-header">
@@ -840,7 +763,7 @@ export default function HomePage() {
           <div style={{ textAlign: "center" }}>
             <div className="label">FAQ</div>
             <h2 className="section-heading" id="faq-heading" style={{ marginTop: "16px" }}>
-              Dúvidas sobre a Ceteo IPTV
+              Dúvidas sobre a Questbr IPTV
             </h2>
             <p className="section-subtext" style={{ marginInline: "auto" }}>
               Reunimos as perguntas que mais chegam no WhatsApp. A lista completa está na página de{" "}

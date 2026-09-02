@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* =============================================
-   CETEO IPTV – style.css (ported from legacy-static/css/style.css)
+   QUESTBR IPTV – style.css (ported from legacy-static/css/style.css)
    ============================================= */
 
 :root {
@@ -518,7 +518,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-display); font-size: .825rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .08em; color: var(--t2);
 }
-.plan-desc { font-size: .875rem; color: var(--t2); margin-top: 6px; min-height: 42px; }
+.plan-featured .plan-name { color: var(--accent); }
+.plan-title {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 800;
+  color: var(--t1); margin-top: 8px;
+}
 .plan-price { margin-top: 24px; display: flex; align-items: baseline; gap: 4px; }
 .plan-currency { font-size: 1.1rem; font-weight: 700; color: var(--t2); margin-top: 6px; }
 .plan-amount {

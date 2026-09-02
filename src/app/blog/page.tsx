@@ -4,16 +4,16 @@ import { whatsappLink } from "@/lib/data";
 import { blogPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Blog Ceteo IPTV — Dicas de IPTV, streaming e tecnologia",
+  title: "Blog Questbr IPTV — Dicas de IPTV, streaming e tecnologia",
   description: "Artigos práticos sobre configuração de dispositivos, internet para streaming, solução de travamentos e boas práticas de uso do IPTV.",
   alternates: { canonical: "/blog/" },
   openGraph: {
     url: "/blog/",
-    title: "Blog Ceteo IPTV — Dicas de IPTV, streaming e tecnologia",
+    title: "Blog Questbr IPTV — Dicas de IPTV, streaming e tecnologia",
     description: "Artigos práticos sobre configuração de dispositivos, internet para streaming, solução de travamentos e boas práticas de uso do IPTV.",
   },
   twitter: {
-    title: "Blog Ceteo IPTV — Dicas de IPTV, streaming e tecnologia",
+    title: "Blog Questbr IPTV — Dicas de IPTV, streaming e tecnologia",
     description: "Artigos práticos sobre configuração de dispositivos, internet para streaming, solução de travamentos e boas práticas de uso do IPTV.",
   },
 };

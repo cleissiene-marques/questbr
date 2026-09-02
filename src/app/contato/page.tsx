@@ -5,16 +5,16 @@ import { WhatsAppIcon, EmailIcon, HelpCircleIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Contato",
-  description: "Fale com a Ceteo IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
+  description: "Fale com a Questbr IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
   alternates: { canonical: "/contato/" },
   openGraph: {
     url: "/contato/",
-    title: "Contato | Ceteo IPTV",
-    description: "Fale com a Ceteo IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
+    title: "Contato | Questbr IPTV",
+    description: "Fale com a Questbr IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
   },
   twitter: {
-    title: "Contato | Ceteo IPTV",
-    description: "Fale com a Ceteo IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
+    title: "Contato | Questbr IPTV",
+    description: "Fale com a Questbr IPTV pelo WhatsApp ou e-mail. Atendimento humano todos os dias para tirar dúvidas, pedir teste grátis ou resolver problemas.",
   },
 };
 

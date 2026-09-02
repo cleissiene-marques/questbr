@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.title} | Blog Ceteo IPTV`,
+    title: `${post.title} | Blog Questbr IPTV`,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}/` },
     openGraph: {
