@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © 2026 Ceteo IPTV · ocluster.com.br · Todos os direitos reservados.
+            © 2026 Ceteo IPTV · questbr.com.br · Todos os direitos reservados.
             <br />
             <small style={{ color: "var(--t3)" }}>Serviço de tecnologia e suporte para aplicativos de streaming.</small>
           </p>

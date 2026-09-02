@@ -166,7 +166,7 @@ export default function HomePage() {
     "@type": "Product",
     name: "Ceteo IPTV",
     description: "Serviço de IPTV com transmissão estável em HD, Full HD e 4K, suporte humano no WhatsApp e planos sem fidelidade.",
-    brand: { "@id": "https://ocluster.com.br/#organization" },
+    brand: { "@id": "https://questbr.com.br/#organization" },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",

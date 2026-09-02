@@ -32,7 +32,7 @@ export default function PoliticaDePrivacidadePage() {
             <p className="legal-updated">Última atualização: 31 de agosto de 2026</p>
 
             <h2>1. Quem somos</h2>
-            <p>Esta política explica como a Ceteo IPTV (ocluster.com.br) coleta, usa e protege os dados pessoais de quem solicita informações, teste grátis ou contrata nossos planos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+            <p>Esta política explica como a Ceteo IPTV (questbr.com.br) coleta, usa e protege os dados pessoais de quem solicita informações, teste grátis ou contrata nossos planos, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
 
             <h2>2. Quais dados coletamos</h2>
             <ul>
