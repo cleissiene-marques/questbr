@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import Analytics from "@/components/Analytics";
 import { SITE_URL, SITE_NAME } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        <Analytics />
         <AnimateOnScroll />
         <Header />
         <main id="conteudo">{children}</main>
