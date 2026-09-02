@@ -1,0 +1,15 @@
+export const SITE_URL = "https://ocluster.com.br";
+export const SITE_NAME = "Ceteo IPTV";
+export const WHATSAPP_NUMBER = "5589981175065";
+export const CONTACT_EMAIL = "contato@ocluster.com.br";
+
+export const TESTE_GRATIS_MSG = "Olá! Quero solicitar o teste grátis da Ceteo IPTV.";
+
+export function planMsg(plano: string): string {
+  return `Olá! Quero contratar o plano ${plano} da Ceteo IPTV.`;
+}
+
+export function whatsappLink(mensagem?: string): string {
+  if (!mensagem) return `https://wa.me/${WHATSAPP_NUMBER}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
+}
