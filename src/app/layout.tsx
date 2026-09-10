@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import SiteChrome from "@/components/SiteChrome";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Analytics from "@/components/Analytics";
 import { SITE_URL, SITE_NAME } from "@/lib/data";
@@ -83,10 +81,7 @@ export default function RootLayout({
         />
         <Analytics />
         <AnimateOnScroll />
-        <Header />
-        <main id="conteudo">{children}</main>
-        <Footer />
-        <WhatsAppFloat />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

@@ -872,6 +872,57 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* =============================================
+   LINKS PAGE (bio link hub)
+   ============================================= */
+.links-page {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding-block: 56px;
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, var(--glow), transparent), var(--bg);
+}
+.links-page-inner { width: 100%; max-width: 440px; padding-inline: 20px; display: flex; flex-direction: column; align-items: center; }
+.links-page .logo { margin-bottom: 18px; }
+.links-page .tagline { font-size: .9375rem; color: var(--t2); text-align: center; max-width: 320px; margin: 0 0 8px; }
+.links-page .status {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-display); font-size: .75rem; font-weight: 700; letter-spacing: .06em;
+  color: var(--green); background: rgba(16,185,129,.08); border: 1px solid rgba(16,185,129,.25);
+  border-radius: 100px; padding: 5px 13px; margin-bottom: 32px;
+}
+.links-page .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 1.8s infinite; }
+.links-list { width: 100%; display: flex; flex-direction: column; gap: 14px; }
+.link-card {
+  display: flex; align-items: center; gap: 14px; width: 100%;
+  padding: 17px 20px; border-radius: var(--r); text-decoration: none;
+  font-family: var(--font-display); font-weight: 700; font-size: 1rem;
+  transition: transform var(--t), box-shadow var(--t), background var(--t), border-color var(--t);
+  border: 1.5px solid var(--brd); background: var(--bg-card); color: var(--t1);
+}
+.link-card:hover, .link-card:focus-visible { transform: translateY(-2px); border-color: var(--brd-h); background: var(--bg-card-h); }
+.link-card:active { transform: translateY(0); }
+.link-card-icon {
+  flex-shrink: 0; width: 42px; height: 42px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--glow-sm); color: var(--accent);
+}
+.link-card-text { flex: 1; text-align: left; }
+.link-card-sub { display: block; font-family: var(--font-body); font-weight: 400; font-size: .8rem; color: var(--t2); margin-top: 2px; }
+.link-card-arrow { flex-shrink: 0; color: var(--t3); transition: transform var(--t), color var(--t); }
+.link-card:hover .link-card-arrow { transform: translateX(3px); color: var(--accent); }
+.link-card.is-primary { background: var(--accent); color: #051217; border-color: transparent; box-shadow: 0 0 28px rgba(6,182,212,.35); }
+.link-card.is-primary:hover { background: var(--accent-lt); box-shadow: 0 0 40px rgba(6,182,212,.5); }
+.link-card.is-primary .link-card-icon { background: rgba(5,18,23,.14); color: #051217; }
+.link-card.is-primary .link-card-sub { color: rgba(5,18,23,.65); }
+.link-card.is-primary .link-card-arrow { color: rgba(5,18,23,.55); }
+.link-card.is-primary:hover .link-card-arrow { color: #051217; }
+.link-card.is-whatsapp .link-card-icon { background: rgba(16,185,129,.12); color: var(--green); }
+.links-page-footer { margin-top: 40px; text-align: center; }
+.links-page-footer p { font-size: .78rem; color: var(--t3); margin: 0; }
+.links-page-footer a { color: var(--t2); text-decoration: none; }
+.links-page-footer a:hover { color: var(--accent); }
+
+/* =============================================
    RESPONSIVE
    ============================================= */
 @media (max-width: 1024px) {
@@ -930,4 +981,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 400px) {
   .btn { white-space: normal; text-align: center; }
+  .link-card { padding: 15px 16px; gap: 12px; }
+  .link-card-icon { width: 38px; height: 38px; }
 }
