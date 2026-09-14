@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/data";
+import { blogPosts } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
@@ -18,8 +19,15 @@ const routes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
+  const staticEntries = routes.map((route) => ({
     url: `${SITE_URL}/${route}`,
     lastModified: new Date(),
   }));
+
+  const postEntries = blogPosts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}/`,
+    lastModified: new Date(post.date),
+  }));
+
+  return [...staticEntries, ...postEntries];
 }

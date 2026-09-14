@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
+import { Sora, DM_Sans } from "next/font/google";
 import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Analytics from "@/components/Analytics";
 import { SITE_URL, SITE_NAME } from "@/lib/data";
+
+const sora = Sora({
+  subsets: ["latin"],
+  variable: "--font-sora",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -65,15 +78,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="pt-BR">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="pt-BR" className={`${sora.variable} ${dmSans.variable}`}>
       <body>
         <script
           type="application/ld+json"

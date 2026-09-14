@@ -351,7 +351,7 @@ export default function HomePage() {
             fill
             sizes="100vw"
             className="lifestyle-img"
-            priority
+            loading="lazy"
           />
           <div className="lifestyle-overlay" aria-hidden="true"></div>
         </div>

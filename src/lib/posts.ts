@@ -17,6 +17,236 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "o-que-e-iptv-entenda-a-tecnologia",
+    title: "O que é IPTV? Entenda a tecnologia antes de contratar",
+    description:
+      "IPTV explicado de forma direta: o que significa a sigla, como o conteúdo chega até você, os 3 formatos dentro do serviço, a diferença para TV a cabo e se a tecnologia é legal.",
+    badge: "Conceito",
+    date: "2026-09-14",
+    readTime: "6 min",
+    excerpt:
+      "A sigla aparece em toda propaganda do setor, mas poucos explicam como a tecnologia funciona de verdade. Veja o resumo direto, sem enrolação.",
+    sections: [
+      {
+        paragraphs: [
+          "Antes de comparar preço ou aparelho, vale entender uma coisa simples: o que é, de fato, IPTV. A sigla aparece em toda propaganda do setor, mas poucos textos explicam com clareza como a tecnologia funciona por trás do nome.",
+        ],
+      },
+      {
+        heading: "IPTV, em uma frase",
+        paragraphs: [
+          "IPTV é a sigla para Internet Protocol Television: transmissão de TV — canais, filmes, séries — usando o protocolo de internet, em vez do sinal de antena, parabólica ou cabo coaxial da TV tradicional. Na prática, é o mesmo princípio de qualquer vídeo assistido on-line, só que organizado como uma grade de canais e um catálogo, dentro de um aplicativo dedicado.",
+        ],
+      },
+      {
+        heading: "Como o conteúdo chega até a sua tela",
+        paragraphs: [
+          "Não existe fio especial nem equipamento obrigatório: o acesso acontece por um aplicativo, chamado de player, instalado no aparelho que você já tem — Smart TV, TV Box, celular, notebook ou um Fire TV Stick conectado na TV. Esse player carrega um catálogo de canais e conteúdos entregue por servidores responsáveis por manter tudo no ar.",
+          "É justamente esse detalhe que separa um serviço de IPTV bom de um ruim: a estabilidade não depende do aplicativo em si, e sim da estrutura de servidores por trás dele. Dois serviços com o mesmo player podem entregar experiências bem diferentes dependendo de quem cuida dessa infraestrutura.",
+        ],
+      },
+      {
+        heading: "Os 3 formatos de conteúdo que cabem dentro do IPTV",
+        paragraphs: [
+          "Na prática, \"assistir IPTV\" pode significar três coisas diferentes, geralmente reunidas no mesmo aplicativo:",
+        ],
+        list: [
+          "Canais ao vivo (Live IPTV): a programação roda em tempo real, com grade fixa — o mais parecido com a TV tradicional.",
+          "Filmes e séries sob demanda (VOD): um catálogo para assistir quando quiser, pausar e continuar depois, como em qualquer streaming.",
+          "Reprise de programas (catch-up): permite voltar e assistir algo que já foi ao ar horas ou dias atrás, sem precisar ter gravado nada.",
+        ],
+      },
+      {
+        heading: "Em que o IPTV difere da TV a cabo e do streaming comum",
+        paragraphs: [
+          "A TV a cabo depende de instalação física, contrato de fidelidade e pacotes fechados de canais — você paga por muito conteúdo que talvez nunca assista. Já os serviços de streaming tradicionais costumam ter catálogo próprio, mas sem canais ao vivo ou TV aberta na maioria dos casos, o que obriga a assinar vários aplicativos ao mesmo tempo para cobrir tudo.",
+          "O IPTV fica nesse meio-termo: reúne canais ao vivo e catálogo sob demanda num único aplicativo, sem instalação física e, na maioria dos serviços sérios, sem fidelidade obrigatória.",
+        ],
+      },
+      {
+        heading: "O que é preciso para assistir sem travar",
+        paragraphs: [
+          "Além de um aparelho compatível — praticamente qualquer Smart TV, TV Box ou celular serve —, o fator que mais pesa é a internet: cerca de 15 Mbps reais para HD, 25 Mbps para Full HD e 45 Mbps para 4K costumam ser suficientes. \"Reais\" é a palavra-chave: o plano contratado com a operadora nem sempre é a velocidade que sobra depois de todos os aparelhos da casa dividirem a mesma rede.",
+          "Já publicamos guias específicos sobre esses dois pontos no blog: como configurar a Smart TV passo a passo e quanto de internet cada qualidade de imagem exige de verdade — vale a leitura para quem está montando a estrutura pela primeira vez.",
+        ],
+      },
+      {
+        heading: "IPTV é legal?",
+        paragraphs: [
+          "É a pergunta que mais aparece quando alguém ouve falar de IPTV pela primeira vez. A tecnologia em si é totalmente legal — é a mesma forma de entrega usada por serviços como Globoplay e Netflix. O que determina a legalidade é a origem e o licenciamento do conteúdo, não o protocolo de transmissão. Por isso, o critério mais seguro na hora de escolher um serviço é a transparência: teste disponível antes de pagar, suporte real e clareza sobre preço e condições.",
+        ],
+      },
+      {
+        heading: "Vale a pena?",
+        paragraphs: [
+          "Para quem já usa streaming no dia a dia e sente falta de canais ao vivo — jogos, TV aberta, noticiário — sem voltar a pagar por um pacote de TV a cabo caro e engessado, o IPTV costuma valer a pena. A forma mais segura de descobrir é testando antes de assinar, prestando atenção principalmente nos horários de maior audiência, que é quando qualquer serviço mostra sua real estabilidade.",
+          "Para se aprofundar em cada um desses pontos — comparativos, aparelhos, velocidade de internet e como escolher um serviço confiável — reunimos tudo em um guia completo sobre o que é IPTV, disponível no site.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "iptv-vs-netflix-vale-a-pena",
+    title: "IPTV vs Netflix: vale a pena assinar os dois?",
+    description:
+      "IPTV e Netflix resolvem problemas diferentes: um entrega canais ao vivo e esportes, o outro um catálogo fechado de séries e filmes originais. Entenda quando vale manter os dois.",
+    badge: "Comparativo",
+    date: "2026-09-13",
+    readTime: "6 min",
+    excerpt:
+      "Não são concorrentes diretos — são complementares na maioria dos casos. Veja quando faz sentido ter os dois e quando um substitui o outro.",
+    sections: [
+      {
+        paragraphs: [
+          "É comum comparar IPTV com Netflix como se fossem concorrentes diretos disputando o mesmo espaço na TV. Na prática, os dois resolvem problemas diferentes — e entender essa diferença evita cancelar algo que você ainda vai sentir falta.",
+        ],
+      },
+      {
+        heading: "O que cada um entrega de fato",
+        paragraphs: [
+          "A Netflix é um catálogo fechado: produções próprias e licenciadas, sem canais ao vivo, sem TV aberta, sem jogos ao vivo. Você assiste o que está disponível na plataforma, no ritmo que quiser.",
+          "O IPTV entrega canais ao vivo (TV aberta, fechada, esportes), além de um catálogo próprio de filmes e séries sob demanda — geralmente em volume maior, mas sem o mesmo padrão de produção original que a Netflix investe.",
+        ],
+      },
+      {
+        heading: "Onde a Netflix ainda ganha",
+        paragraphs: [
+          "Produções originais de alto orçamento, curadoria de catálogo e um padrão de streaming extremamente consistente são pontos fortes da Netflix que um serviço de IPTV dificilmente replica com a mesma qualidade.",
+        ],
+      },
+      {
+        heading: "Onde o IPTV ganha",
+        list: [
+          "Canais ao vivo — jogo de domingo, jornal, TV aberta — que a Netflix simplesmente não tem.",
+          "Um catálogo bem mais amplo de filmes e séries, mesmo sem o mesmo padrão de produção original.",
+          "Um único aplicativo cobrindo o que hoje exigiria assinar vários serviços de streaming separados.",
+          "Planos geralmente mais baratos do que a soma de duas ou três assinaturas de streaming somadas.",
+        ],
+      },
+      {
+        heading: "Vale manter os dois?",
+        paragraphs: [
+          "Para quem gosta de produções originais específicas da Netflix e também acompanha canais ao vivo ou esportes, manter as duas assinaturas costuma sair mais barato do que tentar substituir a Netflix por outra coisa, e mais completo do que abrir mão dos canais ao vivo do IPTV.",
+          "Já para quem só assiste catálogo fechado, sem interesse em canais ao vivo, pode fazer mais sentido manter só a Netflix. A decisão muda pouco pelo preço e muito pelo que você realmente assiste no dia a dia.",
+        ],
+      },
+      {
+        heading: "Como decidir sem chute",
+        paragraphs: [
+          "A forma mais simples de decidir é testar. Como o IPTV normalmente libera teste grátis antes da cobrança, dá para avaliar se os canais ao vivo e o catálogo cobrem o que você assistiria de qualquer forma — sem comprometer nada antes de ter certeza.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "iptv-no-fire-tv-stick-como-instalar",
+    title: "IPTV no Fire TV Stick: como instalar passo a passo",
+    description:
+      "Passo a passo completo para instalar e configurar um aplicativo de IPTV no Fire TV Stick, da compra do aparelho até o primeiro canal na tela.",
+    badge: "Configuração",
+    date: "2026-09-12",
+    readTime: "5 min",
+    excerpt:
+      "O Fire TV Stick é um dos jeitos mais rápidos de ter IPTV numa TV comum. Veja o passo a passo completo, da instalação ao primeiro canal na tela.",
+    sections: [
+      {
+        paragraphs: [
+          "O Fire TV Stick é um dos jeitos mais simples de assistir IPTV, principalmente em TVs sem sistema smart robusto. Basta plugar na entrada HDMI e seguir alguns passos, sem precisar de técnico nem de conhecimento avançado.",
+        ],
+      },
+      {
+        heading: "O que você precisa antes de começar",
+        list: [
+          "Fire TV Stick já configurado com conta Amazon e conectado ao Wi-Fi.",
+          "Internet com pelo menos 15 Mbps reais disponíveis (mais, se for assistir em Full HD ou 4K).",
+          "Dados de acesso enviados pelo suporte do seu serviço de IPTV (usuário, senha ou link de ativação).",
+        ],
+      },
+      {
+        heading: "Passo a passo de instalação",
+        paragraphs: [
+          "Com o Fire TV Stick já conectado à TV e à internet, o processo de instalação segue essa ordem:",
+        ],
+        list: [
+          "Na tela inicial, use a busca (ícone de lupa) e procure pelo nome do aplicativo (player) indicado pelo seu serviço de IPTV.",
+          "Selecione o aplicativo na Amazon Appstore e toque em \"Baixar\" ou \"Obter\".",
+          "Depois de instalado, abra o aplicativo e faça login com os dados enviados pelo suporte.",
+          "Aguarde o carregamento da lista de canais — na primeira abertura, pode levar alguns segundos a mais.",
+        ],
+      },
+      {
+        heading: "Se o aplicativo não aparecer na busca",
+        paragraphs: [
+          "Alguns players não ficam disponíveis na Amazon Appstore. Nesse caso, o caminho é instalar um app de terceiros que permite instalação manual (como o Downloader, disponível na própria loja), ativar a opção de \"Apps de fontes desconhecidas\" nas configurações do Fire TV Stick, e instalar o arquivo indicado pelo suporte do seu serviço. Siga sempre a orientação específica passada pela equipe de suporte nesse passo — isso evita instalar algo de fonte não confiável.",
+        ],
+      },
+      {
+        heading: "Ajustes que evitam travamento",
+        list: [
+          "Prefira o modelo 4K Max se o objetivo é assistir em 4K — versões de entrada podem engasgar nessa qualidade.",
+          "Deixe o roteador o mais próximo possível da TV, ou use um adaptador Ethernet USB no Fire TV Stick para conexão por cabo.",
+          "Mantenha a qualidade de vídeo no automático dentro do player, em vez de forçar a qualidade máxima o tempo todo.",
+        ],
+      },
+      {
+        heading: "Depois de instalado",
+        paragraphs: [
+          "Se o aplicativo abrir e os canais carregarem, mas o conteúdo travar durante o uso, o problema provavelmente é de rede, não da instalação. Vale conferir o guia sobre causas de travamento no IPTV, aqui no blog, para diagnosticar rapidamente.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "iptv-no-celular-como-assistir",
+    title: "IPTV no celular: como assistir no Android e no iPhone",
+    description:
+      "Como instalar e configurar IPTV no celular, Android ou iPhone, com dicas para assistir com boa qualidade usando dados móveis ou Wi-Fi sem estourar a franquia.",
+    badge: "Configuração",
+    date: "2026-09-11",
+    readTime: "5 min",
+    excerpt:
+      "Assistir IPTV no celular é tão simples quanto instalar qualquer outro aplicativo — a diferença está em três ajustes que evitam travar e gastar dado móvel demais.",
+    sections: [
+      {
+        paragraphs: [
+          "Boa parte de quem assina IPTV pensa primeiro na Smart TV, mas o celular costuma ser o segundo aparelho mais usado — seja para assistir na cozinha, na cama ou fora de casa. A instalação é simples, mas alguns ajustes fazem diferença na experiência.",
+        ],
+      },
+      {
+        heading: "Instalando no Android",
+        paragraphs: [
+          "No Android, o aplicativo (player) indicado pelo seu serviço de IPTV normalmente está disponível na Google Play Store. Basta buscar pelo nome informado pelo suporte, instalar e fazer login com os dados de acesso recebidos.",
+        ],
+      },
+      {
+        heading: "Instalando no iPhone (iOS)",
+        paragraphs: [
+          "No iPhone, o processo é parecido, mas nem todo player de IPTV está disponível na App Store. Quando isso acontece, o suporte do seu serviço costuma indicar um aplicativo alternativo compatível com iOS, que segue a mesma lógica de login e catálogo.",
+        ],
+      },
+      {
+        heading: "Wi-Fi ou dados móveis?",
+        paragraphs: [
+          "Em casa, prefira sempre o Wi-Fi — além de mais estável, evita consumir a franquia de dados do plano. Fora de casa, dá para assistir por dados móveis, mas vale prestar atenção na qualidade selecionada dentro do app: assistir em 4K pelo plano de dados pode consumir mais de 7 GB por hora.",
+        ],
+      },
+      {
+        heading: "Como economizar dados móveis",
+        list: [
+          "Selecione a qualidade \"automática\" ou \"HD\" em vez de Full HD/4K quando estiver fora do Wi-Fi.",
+          "Evite deixar o aplicativo rodando em segundo plano com a tela apagada.",
+          "Se o player tiver a opção, baixe o conteúdo sob demanda pelo Wi-Fi antes de sair de casa.",
+        ],
+      },
+      {
+        heading: "Problemas comuns no celular",
+        paragraphs: [
+          "Se o app travar só no celular e não nos outros aparelhos da casa, o motivo costuma ser espaço de armazenamento baixo ou muitos aplicativos abertos ao mesmo tempo consumindo memória. Fechar apps em segundo plano e limpar o cache do player geralmente resolve.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "lista-iptv-o-que-e-e-como-escolher",
     title: "Lista IPTV: o que é e como escolher uma confiável",
     description:
