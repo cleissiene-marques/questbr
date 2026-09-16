@@ -4,6 +4,9 @@ import "./globals.css";
 import SiteChrome from "@/components/SiteChrome";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Analytics from "@/components/Analytics";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { SITE_URL, SITE_NAME } from "@/lib/data";
 
 const sora = Sora({
@@ -86,7 +89,9 @@ export default function RootLayout({
         />
         <Analytics />
         <AnimateOnScroll />
-        <SiteChrome>{children}</SiteChrome>
+        <SiteChrome header={<Header />} footer={<Footer />} whatsapp={<WhatsAppFloat />}>
+          {children}
+        </SiteChrome>
       </body>
     </html>
   );
