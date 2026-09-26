@@ -3,8 +3,8 @@ import { whatsappLink, TESTE_GRATIS_MSG, SITE_URL } from "@/lib/data";
 import { WhatsAppIcon, LogoMarkIcon, LayersIcon, HelpCircleIcon, LinkIcon, ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Links — Questbr IPTV",
-  description: "Todos os links da Questbr IPTV em um só lugar: teste grátis, planos, WhatsApp e FAQ.",
+  title: "Links — Canal DTK IPTV",
+  description: "Todos os links da Canal DTK IPTV em um só lugar: teste grátis, planos, WhatsApp e FAQ.",
   alternates: { canonical: "/links/" },
   robots: { index: false, follow: true },
 };
@@ -61,7 +61,7 @@ export default function LinksPage() {
             <LogoMarkIcon width={20} height={20} />
           </div>
           <span className="logo-name">
-            Questbr <span>IPTV</span>
+            Canal DTK <span>IPTV</span>
           </span>
         </div>
 
@@ -71,7 +71,7 @@ export default function LinksPage() {
           Atendimento humano no WhatsApp todos os dias
         </span>
 
-        <nav className="links-list" aria-label="Links da Questbr IPTV">
+        <nav className="links-list" aria-label="Links da Canal DTK IPTV">
           {links.map(({ href, label, sub, icon: Icon, variant }) => {
             const external = href.startsWith("http");
             return (
@@ -96,7 +96,7 @@ export default function LinksPage() {
 
         <div className="links-page-footer">
           <p>
-            © {new Date().getFullYear()} <a href="/">Questbr IPTV</a>
+            © {new Date().getFullYear()} <a href="/">Canal DTK IPTV</a>
           </p>
         </div>
       </div>

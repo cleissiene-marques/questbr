@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/lista-iptv/" },
   openGraph: {
     url: "/lista-iptv/",
-    title: "Lista IPTV: o que é, como funciona e como escolher uma confiável | Questbr IPTV",
+    title: "Lista IPTV: o que é, como funciona e como escolher uma confiável | Canal DTK IPTV",
     description:
       "Entenda o que é uma lista IPTV, a diferença entre listas gratuitas e listas pagas confiáveis, os riscos das listas piratas e como escolher uma lista IPTV estável para assistir sem travar.",
   },
   twitter: {
-    title: "Lista IPTV: o que é, como funciona e como escolher uma confiável | Questbr IPTV",
+    title: "Lista IPTV: o que é, como funciona e como escolher uma confiável | Canal DTK IPTV",
     description:
       "Entenda o que é uma lista IPTV, a diferença entre listas gratuitas e listas pagas confiáveis, e como escolher uma lista estável para assistir sem travar.",
   },
@@ -154,7 +154,7 @@ export default function ListaIptvPage() {
       <section className="final-cta" aria-labelledby="cta-heading">
         <div className="container">
           <div className="label">Teste IPTV grátis</div>
-          <h2 className="section-heading" id="cta-heading" style={{ marginTop: "16px" }}>Teste a lista IPTV da Questbr antes de decidir</h2>
+          <h2 className="section-heading" id="cta-heading" style={{ marginTop: "16px" }}>Teste a lista IPTV da Canal DTK antes de decidir</h2>
           <p className="section-subtext">Peça o teste grátis, avalie a estabilidade nos seus horários de pico e só contrate depois de ver funcionando na sua casa.</p>
           <div className="final-actions">
             <a href={whatsappLink(TESTE_GRATIS_MSG)} className="btn btn-primary" target="_blank" rel="noopener">Solicitar teste no WhatsApp</a>

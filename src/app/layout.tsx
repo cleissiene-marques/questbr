@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Questbr IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp todos os dias. Peça seu teste grátis agora. Planos a partir de R$ 25/mês, sem fidelidade.",
+    "Canal DTK IPTV: transmissão estável em HD, Full HD e 4K com suporte humano no WhatsApp todos os dias. Peça seu teste grátis agora. Planos a partir de R$ 25/mês, sem fidelidade.",
   robots: {
     index: true,
     follow: true,

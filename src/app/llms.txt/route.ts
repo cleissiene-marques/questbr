@@ -20,7 +20,7 @@ export async function GET() {
 - [Planos e preços](${SITE_URL}/planos/): Planos mensal, trimestral, semestral e anual, sem fidelidade.
 - [Teste grátis](${SITE_URL}/teste-gratis/): Como solicitar o teste gratuito antes de contratar.
 - [Perguntas frequentes](${SITE_URL}/faq/): Dúvidas sobre teste, pagamento, aparelhos compatíveis e suporte.
-- [Quem somos](${SITE_URL}/quem-somos/): Sobre a Questbr IPTV.
+- [Quem somos](${SITE_URL}/quem-somos/): Sobre a Canal DTK IPTV.
 - [Contato](${SITE_URL}/contato/): Canais de contato e suporte.
 
 ## Blog

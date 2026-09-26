@@ -1,13 +1,13 @@
-export const SITE_URL = "https://questbr.com.br";
-export const SITE_NAME = "Questbr IPTV";
+export const SITE_URL = "https://canaldstak.com.br";
+export const SITE_NAME = "Canal DTK IPTV";
 export const WHATSAPP_NUMBER = "5511950599356";
-export const CONTACT_EMAIL = "contato@questbr.com.br";
+export const CONTACT_EMAIL = "contato@canaldstak.com.br";
 export const GA_MEASUREMENT_ID = "G-JJK0NWX4DS";
 
-export const TESTE_GRATIS_MSG = "Olá! Quero solicitar o teste grátis da Questbr IPTV.";
+export const TESTE_GRATIS_MSG = "Olá! Quero solicitar o teste grátis da Canal DTK IPTV.";
 
 export function planMsg(plano: string): string {
-  return `Olá! Quero contratar o plano ${plano} da Questbr IPTV.`;
+  return `Olá! Quero contratar o plano ${plano} da Canal DTK IPTV.`;
 }
 
 export function whatsappLink(mensagem?: string): string {

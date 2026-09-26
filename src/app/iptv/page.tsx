@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/iptv/" },
   openGraph: {
     url: "/iptv/",
-    title: "O que é IPTV? Guia Completo: Como Funciona, Legalidade e Preços | Questbr IPTV",
+    title: "O que é IPTV? Guia Completo: Como Funciona, Legalidade e Preços | Canal DTK IPTV",
     description:
       "Guia completo sobre IPTV: o que é, como funciona a transmissão, diferença para TV a cabo e streaming, aparelhos compatíveis, velocidade de internet, legalidade e como escolher um serviço confiável.",
   },
   twitter: {
-    title: "O que é IPTV? Guia Completo: Como Funciona, Legalidade e Preços | Questbr IPTV",
+    title: "O que é IPTV? Guia Completo: Como Funciona, Legalidade e Preços | Canal DTK IPTV",
     description:
       "Guia completo sobre IPTV: o que é, como funciona, aparelhos compatíveis, velocidade necessária, legalidade e como escolher um serviço confiável.",
   },
@@ -83,7 +83,7 @@ const iptvFaqs = [
     pergunta: "O que é M3U em IPTV?",
     resposta: (
       <>
-        M3U é o formato de arquivo que organiza os links de transmissão dentro de uma lista IPTV. Alguns players pedem esse link diretamente; outros, como os que a Questbr indica, já entregam o acesso configurado, sem exigir que você mexa em links manualmente. Saiba mais na nossa{" "}
+        M3U é o formato de arquivo que organiza os links de transmissão dentro de uma lista IPTV. Alguns players pedem esse link diretamente; outros, como os que a Canal DTK indica, já entregam o acesso configurado, sem exigir que você mexa em links manualmente. Saiba mais na nossa{" "}
         <Link href="/lista-iptv/" style={{ color: "var(--accent)" }}>
           página sobre lista IPTV
         </Link>
@@ -115,7 +115,7 @@ const iptvFaqs = [
   {
     pergunta: "Posso testar antes de contratar?",
     resposta:
-      "Sim. A Questbr libera um teste grátis, sem pedir cartão de crédito, para você avaliar estabilidade e qualidade de imagem na sua própria casa antes de decidir.",
+      "Sim. A Canal DTK libera um teste grátis, sem pedir cartão de crédito, para você avaliar estabilidade e qualidade de imagem na sua própria casa antes de decidir.",
   },
   {
     pergunta: "Como funciona o cancelamento ou a troca de plano?",
@@ -476,7 +476,7 @@ export default function IptvPage() {
               Perguntas frequentes sobre IPTV
             </h2>
             <p className="section-subtext" style={{ marginInline: "auto" }}>
-              Dúvidas gerais sobre a tecnologia. Para perguntas específicas sobre planos e suporte da Questbr, veja nossa{" "}
+              Dúvidas gerais sobre a tecnologia. Para perguntas específicas sobre planos e suporte da Canal DTK, veja nossa{" "}
               <Link href="/faq/" style={{ color: "var(--accent)" }}>página de FAQ completa</Link>.
             </p>
           </div>
